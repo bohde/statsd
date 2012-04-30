@@ -13,8 +13,8 @@ A statsd client for Clojure
     (incr "foo.bar.baz" {:value 10 :connection conn})
     (incr "foo.bar.baz" {:value 10 :connection conn :rate 0.1})
 
-    (decr "foo.bar.baz" {:connection stastsd})
-    (decr "foo.bar.baz" {:value -10 :connection stastsd})
+    (decr "foo.bar.baz" {:connection conn})
+    (decr "foo.bar.baz" {:value -10 :connection conn})
 
     (timing "glork" {:value 320 :connection conn})
     (guage "guagor" {:value 333 :connection conn})
